@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catatan Keuangan harian</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+    <h1 id="title">Catatan Keuangan Harian</h1>
+    <div id="container">
+        <section id="main-section">
+            <a href="" class="a-saldo">Saldo</a>
+            <a href="" class="a-pengeluaran">Hitung pengeluaran</a>
+            <a href="" class="a-pemasukan">Hitung pemasukan</a>
+        </section>
+    </div>
+
+    <div id="container">
+        <section id="section-saldo">
+            <h3>Masukan saldo anda:</h3>
+            <p>(Jangan gunakan "," atau ".")</p>
+            <input type="number" id="saldo">
+            <button id="submit-saldo">Submit</button>
+        </section>
+
+        <section id="section-masuk">
+            <h3>Masukan saldo pemasukan</h3>
+            <p>(Jangan gunakan "," atau ".")</p>
+            <input type="number" id="saldo-masuk">
+            <p>keterangan</p>
+            <input type="text" id="keterangan-masuk">
+            <button id="submit-masuk">Submit</button>
+        </section>
+        
+        <section id="section-keluar">
+            <h3>Masukan saldo pengeluaran</h3>
+            <p>(Jangan gunakan "," atau ".")</p>
+            <input type="number" id="saldo-keluar">
+            <p>keterangan</p>
+            <input type="text" id="keterangan-keluar">
+            <button id="submit-keluar">Submit</button>
+        </section>
+    </div>
+
+    <br><br><br>
+
+    <div id="contain">
+        <h2>Saldo saat ini:</h2>
+        <h3 id="currentSaldo">Rp. 0</h3>
+
+        <br><br>
+
+        <h2>History</h2>
+        <table id="tableHistory">
+            <tr>
+                <th>saldo sebelumnya</th>
+                <th>pemasukan/pengeluaran</th>
+                <th>saldo saat ini</th>
+                <th>keterangan</th>
+            </tr>
+        </table>
+    </div>
+
+    <script src="./index.js">
+
+    </script>
+    
+</body>
+</html>
